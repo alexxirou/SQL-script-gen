@@ -17,12 +17,12 @@ If there are foreign key properties in a table the function will demand a table 
 
 If it fails it will ask for the primary key of the table via prompt.
 
-Fnally the function checks if the primary key or foreign key line of each table is the last <li> tag to be added, and if so it replaces the "," at the end of the line with ");".
+Fnally the function checks if the primary key or foreign key line of each table is the last li tag to be added, and if so it replaces the "," at the end of the line with ");".
 
 The resulting script appears on the html to be copied.
 
 //To be added:
 
 Button to download the script in text form.
-Function that filters the contents of the 'results' <div> removing the html tags.
+Function that filters the contents of the 'results' div removing the html tags.
 It then separates the sql commands to lines and downloads a tewt file with sql ending, when the button 'Télechargement' is clicked.
