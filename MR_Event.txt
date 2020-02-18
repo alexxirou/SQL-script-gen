@@ -1,0 +1,17 @@
+ORGANISATEUR(id_Organisateur, nomOrganisateur, mailOrganisateur, telOrganisateur)
+
+TYPEEVENT(id_TypeEvent, libelleEvent)
+
+SALLE(id_Salle, nomSalle, capacite)
+
+TYPEBILLET(id_TypeBillet, typeBillet)
+
+TYPEPAIEMENT(id_TypePaiement, typePaiement)
+
+CLIENT(id_Client, nomClient, prenomClient, mailClient, numTelephoneClient)
+
+EVENT(id_Event, nomEvent, descriptionEvent, dateEvent, heureEvent, #fk_idTypeEvent, #fk_idSalle, #fk_idOrganisateur)
+
+BILLET(id_Billet, numeroPlace, prixBillet, estPaye, #fk_idTypeBillet, #fk_idEvent)
+
+ACHETE(id_Achete, #fk_idClient, #fk_idBillet, #fk_idTypePaiement)
